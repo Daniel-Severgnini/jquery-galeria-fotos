@@ -9,12 +9,12 @@ $(document).ready(function(){
 
    $('form').on('submit', function(e) {
       e.preventDefault();
-      const enderecoDaNovaImagem = $('#endereço-imagem-nova').val();
+      const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
       const novoItem = $('<li style="display: none"></li>');
       $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
       $(`
-         <div clas="overlay-imagem-link">
-            <a href="${enderecoDaNovaImagem}" target="_blank" tittle="Ver imagem em tamnho real">
+         <div class="overlay-imagem-link">
+            <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamnho real">
                Ver imagem em tamanho real
             </a>
          </div>
